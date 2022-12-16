@@ -139,4 +139,9 @@ Hyperlink yang sering di kenal dengan link yaitu menghubungkan antara satu dokum
 ```html
 <a href=" https://www.youtube.com/">klik disini</a>
 ```
+## 6. Image
+Untuk menampilkan gambar dengan HTML, anda bisa menggunakan tag <img>. kemudian masukkan atribut “src=” pada tag <img>.
 
+```html
+<img src="nama gambar">
+```
