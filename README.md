@@ -18,9 +18,7 @@ untuk membuat sebuah halaman website.
     
 </body>
 </html>
-
 ```
-
 
 ## **3. Pengenalan Tag Pada HTML**
 Tag merupakan kode yang digunakan untuk memperkenalkan pada web browser untuk apa
@@ -144,4 +142,175 @@ Untuk menampilkan gambar dengan HTML, anda bisa menggunakan tag <img>. kemudian 
 
 ```html
 <img src="nama gambar">
+```
+## 7. Table
+Tabel merupakan struktur yang digunakan untuk menampilkan informasi dalambentuk baris dan kolom.
+
+contoh :
+```html
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td>baris 2 kolom 1</td>
+        <td>baris 2 kolom 2</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 1</td>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+```
+Hasil :
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td>baris 2 kolom 1</td>
+        <td>baris 2 kolom 2</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 1</td>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+
+
+ HTML menyediakan beberapa atribut yang bias kamu gunakan seperti berikut :
+* Rowspan digunakan untuk menggabungkan baris pada table
+
+contoh :
+```html
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">baris 2 kolom 1</td>
+        <td>baris 2 kolom 2</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 1</td>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+```
+
+Hasil :
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">rowspan</td>
+        <td>baris 2 kolom 2</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+
+* Colspan digunakan untuk menggabungkan kolom pada table
+
+contoh :
+```html
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td colspan="2">rowspan</td>
+        <td>baris 2 kolom 2</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 1</td>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+```
+hasil :
+
+<table border="1" cellpadding="10" cellpacing="0">
+    <tr>
+        <th>baris 1 kolom 1</th>
+        <th>baris 1 kolom 2</th>
+        <th>baris 1 kolom 3</th>
+    </tr>
+    <tr>
+        <td colspan="2">rowspan</td>
+        <td>baris 2 kolom 3</td>
+    </tr>
+    <tr>
+        <td>baris 3 kolom 1</td>
+        <td>baris 3 kolom 2</td>
+        <td>baris 3 kolom 3</td>
+    </tr>
+</table>
+
+## 8. Form
+Form merupakan tempat penginputan data sebelum diproses oleh sistem. salah satunya adalah form login, form comment, form data user, dan lain sebagainya
+```html
+<form></form>
+```
+* Tag input
+Tag input merupakan tag yang akan digunakan dalam form pengisian.
+Berikut beberapa bentuk dalam tag input yang di kategorikan berdasarkan atribut :
+* ### text
+```html
+<input type="text">
+```
+  * ### Password
+
+```html
+<input type="password">
+```
+* ### submit
+  ```html
+  <input type="submit">
+  ```
+* ### checkbox
+```html
+<input type="checkbox">
+```
+* ### Radio
+```html
+<input type="radio">
+```
+* ### Tag textarea
+Tag textarea adalah tag yang sama fungsinya dengan inputan text, hanya saja pada textarea ini dapat diisikan dengan lebih banyak teks didalamnya secara sekaligus.
+contoh penulisan
+```html
+<textarea></textarea>
+```
+
+* ### Tag select
+Tag select merupakan tag yang digunakan user untuk memilih data yang sudah disediakan.
+
+```html
+<select>
+<option>Serang</option>
+<option>Sumatera Selatan</option>
+</select>
 ```
